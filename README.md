@@ -1,3 +1,3 @@
 # Atlas
 
-Pls its my beatiful spaghet code
+Pls its my beautiful spaghet code
