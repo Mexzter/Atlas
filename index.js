@@ -5,9 +5,6 @@ const fs = require("fs");
 client.config = config;
 
 
-//////////////////////
-//	COMMAND BUILDER //
-//////////////////////
 client.commands = new Discord.Collection();	// Make the new Collection to hold the commands
 fs.readdir("./cmd/", (err, files) => {
 	if(err) console.error(err);
@@ -33,9 +30,6 @@ client.on("ready", () => {
 });
 
 
-//////////////////////
-//	MESSAGE HANDLER	//
-//////////////////////
 client.on('message', async message => {
 
 	//if(message.author.id = "234433851772895234") message.delete();
