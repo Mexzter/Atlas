@@ -10,6 +10,7 @@ message.delete();
     .setThumbnail('https://cdn.discordapp.com/attachments/811349819863859241/811352357811650600/atlas7.png')
     .setTitle("Action: Bot info")
     .addField("Memory Used", (process.memoryUsage().heapUsed / 1024 / 1024).toFixed() + "MB")
+    .setFooter("Developed by Mexzter#0001")
 
     message.channel.send({embed})
 }

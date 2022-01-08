@@ -1,7 +1,6 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
 const config = require("./config.json");
-const statlog = require("./statlog.json")
 const fs = require("fs");
 client.config = config;
 
@@ -50,6 +49,7 @@ client.on('message', async message => {
 	// Check for the command and execute if it exists
 	let cmd = client.commands.get(command);
 	if(cmd) cmd.run(client, message, args);
+
 });
 
 
