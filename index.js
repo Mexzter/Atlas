@@ -44,6 +44,8 @@ client.on('message', async message => {
 	let cmd = client.commands.get(command);
 	if(cmd) cmd.run(client, message, args);
 
+	// Ignore this comment Mex, I'm just double-checking that I know what I'm doing lol
+
 });
 
 
